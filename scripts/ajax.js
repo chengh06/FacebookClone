@@ -92,6 +92,7 @@ function basicProfile(currentPath,userId)
 		var url		= currentPath+'index.php/ajax';
 		var pars	= 'action=basicProfile&userId='+userId+'&sex='+sex+'&meeting='+meeting+'&relation='+relation+'&lookingFor='+lookingFor+'&bd='+bd_day+'&bm='+bd_month+'&by='+bd_year+'&bd_visible='+bd_visible+'&hometown='+hometown+'&country='+country+'&politics='+politics+'&religion='+religion+'&state='+state;
 		//alert(pars);
+		
 		var myAjax	= new Ajax.Request(
 			url, 
 			{
