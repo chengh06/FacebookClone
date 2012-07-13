@@ -1,1 +1,42 @@
-This is a facebook clone
+这是一款基于CI2.1开发的facebook clone，代码来源于2008年版本，Kootali团队开发的老版本facebookclone
+老版本使用旧版CI，外加smarty模板，此版本采用CI2.1，不使用模板
+
+本版本为v0.1版，功能尚未完全完成，现有功能有注册，登陆和首页显示
+老版本的REAMME如下：
+As Kootali Face Book Clone is not officialy released the installation instructions are not availeble
+Same for an automated installation.
+Keep it mind that It still needs a lot of development.
+
+Installation Kootali Face Book Clone:
+
+1. Create a MySQL Database and remember Datbase- name, user, password
+2. Import the facebook.sql to your database (e.g. use phpmyadmin)
+3. Edit database settings in application/config/database.php
+
+   $db['default']['database'] = "facebook";    // Databasename
+   $db['default']['username'] = "root";        // Database Username
+   $db['default']['password'] = "password";    // Database Password
+   $db['default']['hostname'] = "localhost";   // database Hostname
+
+4. Edit $config['base_url'] in application/config/config.php
+
+   If installed to the root of your server
+   $config['base_url']	= "http://www.domain.ltd/"; // Url to Facebookclone. Including / at the end
+   If installed to a sub directory
+   $config['base_url']	= "http://www.domain.ltd/somesubdirname/"; // Url to Facebookclone. Including / at the end
+
+5. That's it. You're done. Use account info below to login to your Admin section or User section
+
+   First User Account
+   http://www.yourdomain.tld/index.php
+   User Login    :itzallgood@emailaddress.tld
+   User Pass     :member
+
+   Admin Account
+   http://www.yourdomain.tld/index.php/admin/
+   Admin Login   :admin
+   Admin Pass    :admin
+   
+ps The first thing you have to do is setting configurations in you admin for mencoder, flvtool etc etc
+
+Enjoy, Greetz [iAG] Null Team]
