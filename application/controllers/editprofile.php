@@ -48,6 +48,7 @@ Class Editprofile extends CI_Controller
 			$sex		= $basicRs['sex'];
 			$female='';
 			$male='';
+			$sexNone='';
 			$menCheck='';
 			$womenCheck='';
 			if($sex=='female')
@@ -104,17 +105,17 @@ Class Editprofile extends CI_Controller
 			$data['relationshipStatus']	= selectBox('relationship', $relationshipStatus,$relation,'class="select"');
 
 			if($basicRs['country']!='')
-				$selectCountry	= $basicRs[country];
+				$selectCountry	= $basicRs['country'];
 			else
 				$selectCountry	= '-1';
 			if($selectCountry=='US')
 			{
-				$data['basic_profile_state_us_select']	= selectBox('basic_profile_state_us_select',createState('US'),$basicRs[state]);
+				$data['basic_profile_state_us_select']	= selectBox('basic_profile_state_us_select',createState('US'),$basicRs['state']);
 				$data['basic_country']	= 'US';
 			}
 			elseif($selectCountry=='CA')
 			{
-				$data['basic_profile_state_ca_select']	= selectBox('basic_profile_state_ca_select',createState('CA'),$basicRs[state]);
+				$data['basic_profile_state_ca_select']	= selectBox('basic_profile_state_ca_select',createState('CA'),$basicRs['state']);
 				$data['basic_country']	= 'CA';
 			}
 				
